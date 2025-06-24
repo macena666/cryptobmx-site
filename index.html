@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Crypto.BMX - Lçamento Oficial</title>
+  <title>Crypto.BMX - Lançamento Oficial</title>
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -14,7 +14,7 @@
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <!-- Metatags SEO -->
+  <!-- Metatags SEO e compartilhamento -->
   <meta name="description" content="Crypto.BMX - A revolução descentralizada para amantes do BMX e cripto. Junte-se à comunidade!">
   <meta property="og:title" content="Crypto.BMX - Liberdade financeira sobre duas rodas" />
   <meta property="og:description" content="Uma criptomoeda feita para quem ama o estilo de vida BMX e acredita na descentralização." />
@@ -35,7 +35,9 @@
       padding: 20px;
       text-align: center;
     }
-    header h1 { font-size: 2.5em; }
+    header h1 {
+      font-size: 2.5em;
+    }
     nav {
       background: #111;
       padding: 10px;
@@ -67,7 +69,9 @@
       font-size: 1em;
       transition: background 0.3s ease;
     }
-    .btn:hover { background: #e04759; }
+    .btn:hover {
+      background: #e04759;
+    }
     img.imagem-bmx {
       max-width: 90%;
       height: auto;
@@ -80,11 +84,25 @@
       padding: 20px;
       font-size: 0.9em;
     }
+    #recursos {
+      background: #111;
+      padding: 40px 20px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+    }
+    #recursos h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+      color: #ff5f6d;
+    }
     .card-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      max-width: 900px;
+      margin: auto;
     }
     .card {
       background: #222;
@@ -98,9 +116,10 @@
       transform: translateY(-10px);
       box-shadow: 0 0 20px #ffc371;
     }
-    .card h3 { margin-bottom: 15px; color: #ffc371; }
-    ul li { margin-bottom: 10px; font-size: 1.1em; }
-    a { color: #ffc371; }
+    .card h3 {
+      margin-bottom: 15px;
+      color: #ffc371;
+    }
     #topBtn {
       position: fixed;
       bottom: 30px;
@@ -116,90 +135,112 @@
       display: none;
       z-index: 1000;
       box-shadow: 0 0 10px #ff5f6d;
+      transition: background 0.3s ease;
     }
-    #topBtn:hover { background: #e04759; }
+    #topBtn:hover {
+      background: #e04759;
+    }
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    a {
+      color: #ffc371;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Crypto.BMX 🚀</h1>
+    <p>O futuro da liberdade financeira descentralizada</p>
+  </header>
 
-<header>
-  <h1>Crypto.BMX 🚀</h1>
-  <p>O futuro da liberdade financeira descentralizada</p>
-</header>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#roteiro">Roteiro</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-<nav>
-  <a href="#sobre">Sobre</a>
-  <a href="#tokenomics">Tokenomics</a>
-  <a href="#roteiro">Roteiro</a>
-</nav>
+  <section id="recursos">
+    <h2>Por que escolher Crypto.BMX?</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Descentralização</h3>
+        <p>Controle total da sua moeda, sem intermediários.</p>
+      </div>
+      <div class="card">
+        <h3>Comunidade Forte</h3>
+        <p>Foco no BMX e na liberdade financeira da galera.</p>
+      </div>
+      <div class="card">
+        <h3>Segurança</h3>
+        <p>Tecnologia blockchain confiável e transparente.</p>
+      </div>
+    </div>
+  </section>
 
-<img src="bmx.png" alt="Logo da criptomoeda Crypto.BMX" class="imagem-bmx">
+  <section id="sobre">
+    <h2>Sobre o Crypto.BMX</h2>
+    <p>
+      Crypto.BMX é uma criptomoeda inovadora criada para revolucionar o mundo do BMX e dar poder à comunidade através da descentralização. 
+      Com tecnologia blockchain transparente e segura, você pode participar da nova era financeira com confiança.
+    </p>
+    <div style="margin-top: 30px; text-align: center;">
+      <a href="https://app.uniswap.org/#/swap?chain=polygon&inputCurrency=USDT&outputCurrency=0x6e7E5834979100b84907b1F6aF0494897D399652" 
+         target="_blank"
+         class="btn">
+        💸 Compre $BMX na Uniswap
+      </a>
+    </div>
+  </section>
 
-<section id="recursos">
-  <h2>Por que escolher Crypto.BMX?</h2>
-  <div class="card-container">
-    <div class="card"><h3>Descentralização</h3><p>Controle total da sua moeda, sem intermediários.</p></div>
-    <div class="card"><h3>Comunidade Forte</h3><p>Foco no BMX e na liberdade financeira da galera.</p></div>
-    <div class="card"><h3>Segurança</h3><p>Tecnologia blockchain confiável e transparente.</p></div>
-  </div>
-</section>
+  <section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <ul>
+      <li>🔹 Suprimento total: 1.000.000.000 BMX</li>
+      <li>🔹 50% Venda Pública</li>
+      <li>🔹 20% Equipe e Desenvolvimento</li>
+      <li>🔹 15% Liquidez</li>
+      <li>🔹 10% Recompensas e Airdrops</li>
+      <li>🔹 5% Marketing</li>
+    </ul>
+  </section>
 
-<section id="sobre">
-  <h2>Sobre o Crypto.BMX</h2>
-  <p>
-    Crypto.BMX é uma criptomoeda inovadora criada para revolucionar o mundo do BMX e dar poder à comunidade através da descentralização.
-    Com tecnologia blockchain transparente e segura, você pode participar da nova era financeira com confiança.
-  </p>
-  <div style="margin-top: 30px; text-align: center;">
-    <a href="https://app.uniswap.org/#/swap?chain=polygon&inputCurrency=USDT&outputCurrency=0x6e7E5834979100b84907b1F6aF0494897D399652" 
-       target="_blank"
-       style="padding: 14px 30px; background: linear-gradient(90deg, #ff5f6d, #ffc371); color: #000; font-weight: bold; font-size: 1.1em; text-decoration: none; border-radius: 10px; box-shadow: 0 0 12px rgba(255, 95, 109, 0.6);">
-      💸 Compre $BMX na Uniswap
-    </a>
-  </div>
-</section>
+  <section id="roteiro">
+    <h2>Roteiro</h2>
+    <ul>
+      <li>✔️ Q2 2025 - Lançamento da Crypto.BMX</li>
+      <li>✔️ Q2 2025 - Listagem na DEX</li>
+      <li>🔜 Q3 2025 - Integração com Wallets</li>
+      <li>🔜 Q4 2025 - Parcerias e expansão</li>
+    </ul>
+  </section>
 
-<section id="tokenomics">
-  <h2>Tokenomics</h2>
-  <ul>
-    <li>🔹 Suprimento total: 1.000.000.000 BMX</li>
-    <li>🔹 50% Venda Pública</li>
-    <li>🔹 20% Equipe e Desenvolvimento</li>
-    <li>🔹 15% Liquidez</li>
-    <li>🔹 10% Recompensas e Airdrops</li>
-    <li>🔹 5% Marketing</li>
-  </ul>
-</section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:contato@crypto.bmx">contato@crypto.bmx</a></p>
+    <p>Telegram: <a href="https://t.me/crypto_bmx" target="_blank">@crypto_bmx</a></p>
+    <p>Uniswap: <a href="https://app.uniswap.org/#/swap?chain=polygon&inputCurrency=USDT&outputCurrency=0x6e7E5834979100b84907b1F6aF0494897D399652" target="_blank">Comprar BMX</a></p>
+  </section>
 
-<section id="roteiro">
-  <h2>Roteiro</h2>
-  <ul>
-    <li>✔️ Q2 2025 - Lançamento da Crypto.BMX</li>
-    <li>✔️ Q2 2025 - Listagem na DEX</li>
-    <li>🔜 Q3 2025 - Integração com Wallets</li>
-    <li>🔜 Q4 2025 - Parcerias e expansão</li>
-  </ul>
-</section>
+  <footer>
+    <p>&copy; 2025 Crypto.BMX. Todos os direitos reservados.</p>
+  </footer>
 
-<footer>
-  <p>&copy; 2025 Crypto.BMX. Todos os direitos reservados.</p>
-</footer>
+  <button id="topBtn" title="Voltar ao topo">↑</button>
+  <script>
+    const topBtn = document.getElementById('topBtn');
+    window.onscroll = () => {
+      topBtn.style.display = (window.scrollY > 300) ? 'block' : 'none';
+    };
+    topBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
 
-<button id="topBtn" title="Voltar ao topo">&uarr;</button>
-
-<!-- Scripts -->
-<script>
-  const topBtn = document.getElementById('topBtn');
-  window.onscroll = () => {
-    topBtn.style.display = (window.scrollY > 300) ? 'block' : 'none';
-  };
-  topBtn.onclick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init();</script>
-
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
+
