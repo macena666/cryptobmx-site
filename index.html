@@ -3,25 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Crypto.BMX - Lçamento Oficial</title>
-
-  <!-- Favicon -->
+  <title>Crypto.BMX - Lançamento Oficial</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <!-- Fonte Orbitron -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-
-  <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-  <!-- Metatags SEO e compartilhamento -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <meta name="description" content="Crypto.BMX - A revolução descentralizada para amantes do BMX e cripto. Junte-se à comunidade!">
   <meta property="og:title" content="Crypto.BMX - Liberdade financeira sobre duas rodas" />
   <meta property="og:description" content="Uma criptomoeda feita para quem ama o estilo de vida BMX e acredita na descentralização." />
   <meta property="og:image" content="banner-bmx.jpg" />
   <meta property="og:url" content="https://crypto.bmx" />
   <meta name="twitter:card" content="summary_large_image" />
-
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -34,9 +26,6 @@
       background: linear-gradient(90deg, #ff5f6d, #ffc371);
       padding: 20px;
       text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
     }
     nav {
       background: #111;
@@ -72,37 +61,11 @@
     .btn:hover {
       background: #e04759;
     }
-    img.imagem-bmx {
-      max-width: 90%;
-      height: auto;
-      display: block;
-      margin: 40px auto;
-    }
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-    #recursos {
-      background: #111;
-      padding: 40px 20px;
-      margin-bottom: 40px;
-      border-radius: 12px;
-    }
-    #recursos h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2em;
-      color: #ff5f6d;
-    }
     .card-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      max-width: 900px;
-      margin: auto;
     }
     .card {
       background: #222;
@@ -116,9 +79,15 @@
       transform: translateY(-10px);
       box-shadow: 0 0 20px #ffc371;
     }
-    .card h3 {
-      margin-bottom: 15px;
-      color: #ffc371;
+    #tokenChart {
+      max-width: 400px;
+      margin: 40px auto;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
     }
     #topBtn {
       position: fixed;
@@ -137,16 +106,8 @@
       box-shadow: 0 0 10px #ff5f6d;
       transition: background 0.3s ease;
     }
-    #topBtn:hover {
-      background: #e04759;
-    }
-    ul li {
-      margin-bottom: 10px;
-      font-size: 1.1em;
-    }
-    a {
-      color: #ffc371;
-    }
+    ul li { margin-bottom: 10px; font-size: 1.1em; }
+    a { color: #ffc371; }
   </style>
 </head>
 <body>
@@ -179,40 +140,27 @@
       </div>
     </div>
   </section>
-  <img src="bmx.png" alt="Logo da criptomoeda Crypto.BMX" class="imagem-bmx" data-aos="zoom-in">
+
   <section id="sobre">
     <h2>Sobre o Crypto.BMX</h2>
-    <p>
-      Crypto.BMX é uma criptomoeda inovadora criada para revolucionar o mundo do BMX e dar poder à comunidade através da descentralização. 
-      Com tecnologia blockchain transparente e segura, você pode participar da nova era financeira com confiança.
-    </p>
-   <a href="https://app.uniswap.org/#/swap?outputCurrency=0x738850c3F54892c9A43f6976B9b6264C0ffb4C59&chain=polygon" target="_blank">
-  <button style="padding: 12px 24px; background-color: #ff007a; color: white; font-size: 16px; border: none; border-radius: 8px; cursor: pointer;">
-    🛒 Comprar BMX na Uniswap
-  </button>
-</a>
+    <p>Crypto.BMX é uma criptomoeda inovadora criada para revolucionar o mundo do BMX e dar poder à comunidade através da descentralização.</p>
+    <a href="https://app.uniswap.org/#/swap?outputCurrency=0x738850c3F54892c9A43f6976B9b6264C0ffb4C59&chain=polygon" target="_blank">
+      <button class="btn">🛒 Comprar BMX na Uniswap</button>
+    </a>
   </section>
 
-  <section style="padding: 40px; background-color: #f8fafc; font-family: Arial, sans-serif;">
-  <h2 style="font-size: 28px; margin-bottom: 20px; color: #111827;">📊 Tokenomics</h2>
-  <ul style="list-style: none; padding-left: 0; font-size: 18px; color: #1f2937;">
-    <li>🔹 <strong>Suprimento total:</strong> 1.000.000.000 BMX</li>
-    <li>🔹 <strong>50%</strong> Venda Pública</li>
-    <li>🔹 <strong>20%</strong> Equipe e Desenvolvimento</li>
-    <li>🔹 <strong>15%</strong> Liquidez</li>
-    <li>🔹 <strong>10%</strong> Recompensas e Airdrops</li>
-    <li>🔹 <strong>5%</strong> Marketing</li>
-  </ul>
-
-  <div style="margin-top: 30px;">
-    <a href="/grafico-tokenomics" style="text-decoration: none;">
-      <button style="padding: 12px 24px; background-color: #3b82f6; color: white; font-size: 16px; border: none; border-radius: 8px; cursor: pointer;">
-        📈 Ver Gráfico Interativo
-      </button>
-    </a>
-  </div>
-</section>
-
+  <section id="tokenomics">
+    <h2>📊 Tokenomics</h2>
+    <canvas id="tokenChart"></canvas>
+    <ul>
+      <li>🔹 <strong>Suprimento total:</strong> 1.000.000.000 BMX</li>
+      <li>🔹 <strong>50%</strong> Venda Pública</li>
+      <li>🔹 <strong>20%</strong> Equipe e Desenvolvimento</li>
+      <li>🔹 <strong>15%</strong> Liquidez</li>
+      <li>🔹 <strong>10%</strong> Recompensas e Airdrops</li>
+      <li>🔹 <strong>5%</strong> Marketing</li>
+    </ul>
+  </section>
 
   <section id="roteiro">
     <h2>Roteiro</h2>
@@ -231,14 +179,9 @@
     <p>Instagram: <a href="https://www.instagram.com/crypto.bmx" target="_blank">@crypto.bmx</a></p>
     <p>X (Twitter): <a href="https://x.com/Bmx167194" target="_blank">@Bmx167194</a></p>
     <p>Uniswap: <a href="https://app.uniswap.org/#/swap?chain=polygon&inputCurrency=USDT&outputCurrency=0x6e7E5834979100b84907b1F6aF0494897D399652" target="_blank">Comprar BMX</a></p>
-   
     <a href="https://app.uncx.network/lockers/manage/vesting?service=edit&wallet=0x6f63B26f21cAD3F1225502BfF39bF7C5eAB5cad2&chain=137" target="_blank">
-  <button style="padding: 12px 24px; background-color: #3b82f6; color: white; font-size: 16px; border: none; border-radius: 8px; cursor: pointer;">
-    🔒 Gerenciar Bloqueio de Tokens (Vesting)
-  </button>
-</a>
-
-  </a></p>
+      <button class="btn">🔒 Gerenciar Bloqueio de Tokens (Vesting)</button>
+    </a>
   </section>
 
   <footer>
@@ -246,6 +189,7 @@
   </footer>
 
   <button id="topBtn" title="Voltar ao topo">↑</button>
+
   <script>
     const topBtn = document.getElementById('topBtn');
     window.onscroll = () => {
@@ -254,6 +198,39 @@
     topBtn.onclick = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+
+    const ctx = document.getElementById('tokenChart');
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Venda Pública (50%)',
+          'Equipe e Desenvolvimento (20%)',
+          'Liquidez (15%)',
+          'Recompensas e Airdrops (10%)',
+          'Marketing (5%)'
+        ],
+        datasets: [{
+          data: [50, 20, 15, 10, 5],
+          backgroundColor: [
+            '#ff5f6d',
+            '#ffc371',
+            '#3b82f6',
+            '#22c55e',
+            '#a855f7'
+          ],
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            labels: { color: 'white' }
+          }
+        }
+      }
+    });
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
