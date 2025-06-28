@@ -5,115 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Crypto.BMX - Lançamento Oficial</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <meta name="description" content="Crypto.BMX - A revolução descentralizada para amantes do BMX e cripto. Junte-se à comunidade!">
-  <meta property="og:title" content="Crypto.BMX - Liberdade financeira sobre duas rodas" />
-  <meta property="og:description" content="Uma criptomoeda feita para quem ama o estilo de vida BMX e acredita na descentralização." />
-  <meta property="og:image" content="banner-bmx.jpg" />
-  <meta property="og:url" content="https://crypto.bmx" />
-  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Orbitron', sans-serif;
       background: #0d0d0d;
       color: #fff;
-      line-height: 1.6;
     }
     header {
       background: linear-gradient(90deg, #ff5f6d, #ffc371);
-      padding: 20px;
       text-align: center;
+      padding: 30px;
+    }
+    header h1 {
+      font-size: 2.8em;
+      color: #000;
     }
     nav {
       background: #111;
-      padding: 10px;
+      padding: 12px;
       text-align: center;
       position: sticky;
       top: 0;
-      z-index: 1000;
     }
     nav a {
       color: #fff;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
     }
     section {
       padding: 60px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin-top: 20px;
-      background: #ff5f6d;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1em;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background: #e04759;
     }
     .card-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 20px;
+      justify-content: center;
     }
     .card {
-      background: #222;
-      padding: 20px;
+      background: #1e1e1e;
       border-radius: 12px;
-      flex: 1 1 250px;
-      box-shadow: 0 0 10px #ff5f6d;
-      transition: transform 0.3s ease;
+      padding: 20px;
+      flex: 1 1 280px;
+      box-shadow: 0 0 10px rgba(255, 95, 109, 0.4);
+      transition: transform 0.3s;
     }
     .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 20px #ffc371;
+      transform: translateY(-5px);
     }
-    #tokenChart {
-      max-width: 400px;
+    .card h3 {
+      color: #ffc371;
+      margin-bottom: 10px;
+    }
+    img.imagem-bmx {
+      width: 250px;
+      display: block;
       margin: 40px auto;
+      border-radius: 12px;
+    }
+    button, .btn {
+      background: #ff007a;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover, button:hover {
+      background: #e04759;
     }
     footer {
-      background: #111;
       text-align: center;
-      padding: 20px;
+      padding: 30px;
+      background: #111;
       font-size: 0.9em;
     }
-    #topBtn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #ff5f6d;
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-      display: none;
-      z-index: 1000;
-      box-shadow: 0 0 10px #ff5f6d;
-      transition: background 0.3s ease;
+    h2 {
+      color: #ffc371;
+      margin-bottom: 20px;
+      font-size: 2em;
     }
-    ul li { margin-bottom: 10px; font-size: 1.1em; }
-    a { color: #ffc371; }
+    ul li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    a { color: #00d9ff; }
+    canvas {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 40px auto;
+      display: block;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Crypto.BMX 🚀</h1>
-    <p>O futuro da liberdade financeira descentralizada</p>
+    <p>Liberdade financeira sobre duas rodas</p>
   </header>
 
   <nav>
@@ -123,52 +125,76 @@
     <a href="#contato">Contato</a>
   </nav>
 
+  <section id="sobre">
+    <h2>Sobre o Projeto</h2>
+    <p>
+      Crypto.BMX é uma criptomoeda inovadora voltada para a comunidade BMX e entusiastas da liberdade financeira.
+      Criada com foco em descentralização, transparência e recompensas reais para os usuários.
+    </p>
+    <img src="bmx.png" alt="Logo Crypto.BMX" class="imagem-bmx">
+    <a class="btn" href="https://app.uniswap.org/#/swap?outputCurrency=0x738850c3F54892c9A43f6976B9b6264C0ffb4C59&chain=polygon" target="_blank">🛒 Comprar BMX na Uniswap</a>
+  </section>
+
   <section id="recursos">
-    <h2>Por que escolher Crypto.BMX?</h2>
+    <h2>Por que escolher o Crypto.BMX?</h2>
     <div class="card-container">
       <div class="card">
         <h3>Descentralização</h3>
-        <p>Controle total da sua moeda, sem intermediários.</p>
+        <p>Sem controle central. Você decide.</p>
       </div>
       <div class="card">
-        <h3>Comunidade Forte</h3>
-        <p>Foco no BMX e na liberdade financeira da galera.</p>
+        <h3>Recompensas</h3>
+        <p>Ganhe com LP, staking e airdrops.</p>
       </div>
       <div class="card">
-        <h3>Segurança</h3>
-        <p>Tecnologia blockchain confiável e transparente.</p>
+        <h3>Comunidade</h3>
+        <p>Movimento forte, unido e com atitude BMX.</p>
       </div>
     </div>
   </section>
 
-  <section id="sobre">
-    <h2>Sobre o Crypto.BMX</h2>
-    <p>Crypto.BMX é uma criptomoeda inovadora criada para revolucionar o mundo do BMX e dar poder à comunidade através da descentralização.</p>
-    <a href="https://app.uniswap.org/#/swap?outputCurrency=0x738850c3F54892c9A43f6976B9b6264C0ffb4C59&chain=polygon" target="_blank">
-      <button class="btn">🛒 Comprar BMX na Uniswap</button>
-    </a>
-  </section>
-
   <section id="tokenomics">
     <h2>📊 Tokenomics</h2>
-    <canvas id="tokenChart"></canvas>
     <ul>
-      <li>🔹 <strong>Suprimento total:</strong> 1.000.000.000 BMX</li>
-      <li>🔹 <strong>50%</strong> Venda Pública</li>
-      <li>🔹 <strong>20%</strong> Equipe e Desenvolvimento</li>
-      <li>🔹 <strong>15%</strong> Liquidez</li>
-      <li>🔹 <strong>10%</strong> Recompensas e Airdrops</li>
-      <li>🔹 <strong>5%</strong> Marketing</li>
+      <li>🔹 Total: 1.000.000.000 BMX</li>
+      <li>🔹 50% Venda Pública</li>
+      <li>🔹 20% Equipe e Desenvolvimento</li>
+      <li>🔹 15% Liquidez</li>
+      <li>🔹 10% Recompensas e Airdrops</li>
+      <li>🔹 5% Marketing</li>
     </ul>
+    <canvas id="tokenChart"></canvas>
+    <script>
+      const ctx = document.getElementById('tokenChart');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Venda Pública', 'Equipe', 'Liquidez', 'Recompensas', 'Marketing'],
+          datasets: [{
+            label: 'Distribuição de Tokens',
+            data: [50, 20, 15, 10, 5],
+            backgroundColor: [
+              '#00d9ff', '#ff5f6d', '#ffc371', '#a29bfe', '#ffeaa7'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: { position: 'bottom', labels: { color: '#fff' } }
+          }
+        }
+      });
+    </script>
   </section>
 
   <section id="roteiro">
     <h2>Roteiro</h2>
     <ul>
-      <li>✔️ Q2 2025 - Lançamento da Crypto.BMX</li>
-      <li>✔️ Q2 2025 - Listagem na DEX</li>
-      <li>🔜 Q3 2025 - Integração com Wallets</li>
-      <li>🔜 Q4 2025 - Parcerias e expansão</li>
+      <li>✔️ Q2 2025 – Lançamento oficial</li>
+      <li>✔️ Q2 2025 – Listagem na DEX</li>
+      <li>🔜 Q3 2025 – Staking e carteiras</li>
+      <li>🔜 Q4 2025 – Parcerias e expansão</li>
     </ul>
   </section>
 
@@ -178,62 +204,11 @@
     <p>Telegram: <a href="https://t.me/crypto_bmx" target="_blank">@crypto_bmx</a></p>
     <p>Instagram: <a href="https://www.instagram.com/crypto.bmx" target="_blank">@crypto.bmx</a></p>
     <p>X (Twitter): <a href="https://x.com/Bmx167194" target="_blank">@Bmx167194</a></p>
-    <p>Uniswap: <a href="https://app.uniswap.org/#/swap?chain=polygon&inputCurrency=USDT&outputCurrency=0x6e7E5834979100b84907b1F6aF0494897D399652" target="_blank">Comprar BMX</a></p>
-    <a href="https://app.uncx.network/lockers/manage/vesting?service=edit&wallet=0x6f63B26f21cAD3F1225502BfF39bF7C5eAB5cad2&chain=137" target="_blank">
-      <button class="btn">🔒 Gerenciar Bloqueio de Tokens (Vesting)</button>
-    </a>
+    <a class="btn" href="https://app.uncx.network/lockers/manage/vesting?service=edit&wallet=0x6f63B26f21cAD3F1225502BfF39bF7C5eAB5cad2&chain=137" target="_blank">🔒 Gerenciar Vesting</a>
   </section>
 
   <footer>
     <p>&copy; 2025 Crypto.BMX. Todos os direitos reservados.</p>
   </footer>
-
-  <button id="topBtn" title="Voltar ao topo">↑</button>
-
-  <script>
-    const topBtn = document.getElementById('topBtn');
-    window.onscroll = () => {
-      topBtn.style.display = (window.scrollY > 300) ? 'block' : 'none';
-    };
-    topBtn.onclick = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
-    const ctx = document.getElementById('tokenChart');
-    new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        labels: [
-          'Venda Pública (50%)',
-          'Equipe e Desenvolvimento (20%)',
-          'Liquidez (15%)',
-          'Recompensas e Airdrops (10%)',
-          'Marketing (5%)'
-        ],
-        datasets: [{
-          data: [50, 20, 15, 10, 5],
-          backgroundColor: [
-            '#ff5f6d',
-            '#ffc371',
-            '#3b82f6',
-            '#22c55e',
-            '#a855f7'
-          ],
-          borderWidth: 2
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            labels: { color: 'white' }
-          }
-        }
-      }
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>
